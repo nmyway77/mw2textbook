@@ -7,53 +7,13 @@
     body { font-family: 'Arial Rounded MT Bold', Arial, sans-serif; padding: 24px; background: #f6f8fa; }
     .header {
       background: #3b82f6; color: #fff; padding: 32px 0 24px 0; text-align: center;
-      font-size: 1.3rem; letter-spacing: 1px; font-weight: bold; box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      font-size: 1.5rem; letter-spacing: 1px; font-weight: bold; box-shadow: 0 4px 16px rgba(0,0,0,0.07);
       margin-bottom: 18px; border-radius: 0 0 28px 28px;
       position: relative; display: flex; justify-content: center; align-items: center;
     }
     .lesson-select-bar { display:flex; justify-content: center; align-items:center; gap:16px; margin-bottom: 18px; flex-wrap:wrap;}
     .lesson-select-bar select { font-size:1.1em; padding: 5px 15px; border-radius: 8px; border:1.5px solid #2563eb;}
-    .lesson-select-bar .jumpbtn { background:#2563eb; color:#fff; border:none; border-radius:7px; padding:7px 16px; font-weight:bold; cursor:pointer; margin-right:6px;}
-    .lesson-select-bar .jumpbtn.active { background: #dbeafe; color:#1e293b; border:1px solid #2563eb;}
-    .lesson-select-bar .jumpbtn:hover { background:#1d4ed8;}
-    .lesson-title { font-size:1.5em; margin-bottom: 32px; color: #1e293b; font-weight: bold; text-align: center;}
-    .problem-block { background: #fff; margin-bottom: 38px; padding: 24px 16px 24px 16px; border-radius: 20px; box-shadow: 0 4px 18px #0001; border-left: 8px solid #3b82f6;}
-    .kor { font-size:1.22em; font-weight: bold; color: #2563eb; margin-bottom:16px;}
-    .sortable { display: flex; flex-wrap: wrap; min-height: 54px; gap: 14px; margin-bottom: 13px; }
-    .word { border: none; border-radius: 10px; padding: 13px 22px; font-size: 1.2em; cursor: pointer; transition: background 0.15s, transform 0.1s; box-shadow: 0 1px 6px #2563eb18; }
-    .answer .word { background: #e0e7ef; color: #1e293b; font-weight: bold;}
-    .pool .word { background: #2563eb; color: #fff; font-weight: bold;}
-    .pool .word:hover { background: #1d4ed8; transform: scale(1.08);}
-    .ctrl { margin-bottom: 8px;}
-    .ctrl button { padding: 8px 22px; font-size: 1.1em; border-radius: 9px; border: none; background: #3b82f6; color: #fff; cursor: pointer; margin-right: 8px; margin-bottom: 5px; font-weight: bold;}
-    .ctrl button:active { background: #2563eb; }
-    .result { font-size: 1.14em; font-weight: bold; color: #d97706; margin-top: 10px; min-height: 28px;}
-    #lesson-nav { margin: 46px 0 15px 0; text-align: center;}
-    #lesson-nav button { margin: 0 18px; padding: 11px 34px; font-size: 1.12em; border-radius: 12px; background: #2563eb; color: #fff; border:none; font-weight:bold;}
-    #lesson-nav button:active { background:#194ca0;}
-    @media (max-width:600px) {
-      .problem-block { padding:12px 6px 18px 6px;}
-      .word { padding: 9px 11px; font-size:1em;}
-      .ctrl button { padding: 7px 13px; font-size: 1em;}
-      #lesson-nav button { padding: 8px 15px; font-size:1em;}
-    }
-    .home-btn-ko {
-      position: absolute; left: 26px; top: 22px; background: #fff; color: #2563eb;
-      border: none; border-radius: 15px; padding: 12px 22px; font-size: 1.16rem; font-weight: bold;
-      box-shadow: 0 2px 8px #0001; cursor: pointer; text-decoration: none; z-index: 2;
-      transition: background 0.15s, color 0.15s;
-    }
-    .home-btn-ko:hover { background: #dbeafe; color: #1e293b; }
-    @media (max-width:600px) {
-      .home-btn-ko { left: 9px; top: 8px; padding: 7px 13px; font-size: .97em;}
-    }
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-</head>
-<body>
-  <div class="header">
-    <a href="https://nmyway77.github.io/home2/" class="home-btn-ko" title="홈으로 이동">홈으로</a>
-    목동중2 교과서 배열영작[목동서로영어학원]
+    .lesson-select-bar .jumpbtn { background:#2563eb; color:#fff; border:none; border-radius:7px; padding:7px 16px; font-weight:bold; cursor:pointer; margin-r운중2 교과서 배열영작[목동서로영어학원]
   </div>
   <div class="lesson-select-bar">
     <select id="lessonSelect" onchange="goToLesson(this.value)"></select>
